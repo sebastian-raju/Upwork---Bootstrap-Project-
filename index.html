@@ -19,6 +19,11 @@
     :root{
       --button-green:hsl(113, 100%, 27%);
       --button-hover-green:hsl(113, 99%, 37%);
+      --carousal-button-hover-green:rgb(42, 110, 47);
+      --carousal-green:rgb(89, 164, 89);
+      --carousal-red:rgb(164, 89, 103);
+      --carousal-blue:rgb(89, 123, 164);
+      --carousal-yellow: rgb(164, 153, 89);
       --font-green:rgb(20, 168, 0);
       --font-family-heading: 'Playfair Display', serif;
       --font-family-main:'Montserrat', sans-serif;
@@ -76,6 +81,13 @@
       font-weight: 600;
       font-family: var(--font-family-main);
     }
+
+    .common-button:hover{
+      background-color: var(--button-hover-green);
+
+    }
+
+
 
 
     /* navbar */
@@ -135,7 +147,7 @@
     /* hero-section */
 
     .hero-section{
-      margin-top: 180px;
+      margin-top: 210px;
     }
 
     .hero-title{
@@ -156,7 +168,7 @@
 
     @media only screen and (max-width:992px){
       .hero-section{
-      margin-top: 90px;
+      margin-top: 100px;
     }
     .hero-title{
         line-height: 75px;
@@ -166,7 +178,7 @@
 
     @media only screen and (max-width:700px){
       .hero-section{
-      margin-top: 75px;
+      margin-top: 85px;
     }
       .hero-title{
         font-size: 52px;
@@ -175,11 +187,110 @@
       }
     }
 
+
+    /* carousel */
+
+
+    .carousal-image1{
+      background: url('./Assets/images/devandai.jpg') no-repeat top 50% right;
+      background-size:  643px 450px;
+      height: 500px; 
+      /* background-color: rgb(4, 108, 4); */
+      background-color: white;
+    }
+
+    .carousal-image2{
+      background: url('./Assets/images/designcreative.jpg') no-repeat top 50% right;
+      background-size:  643px 450px;
+      height: 500px; 
+      /* background-color: rgb(4, 108, 4); */
+      background-color: white;
+    }
+
+    .carousal-image3{
+      background: url('./Assets/images/saleandmarketing.jpg') no-repeat top 50% right;
+      background-size:  643px 450px;
+      height: 500px; 
+      /* background-color: rgb(4, 108, 4); */
+      background-color: white;
+    }
+
+    .carousal-image4{
+      background: url('./Assets/images/customersupport.jpg') no-repeat top 50% right;
+      background-size:  643px 450px;
+      height: 500px; 
+      /* background-color: rgb(4, 108, 4); */
+      background-color: white;
+    }
+
+
+    .carousel-content1{
+      background-color: var(--carousal-green);
+      color: white;
+      padding-left: 10px;
+    }
+
+    .carousel-content2{
+      background-color: var(--carousal-blue);
+      color: white;
+      padding-left: 10px;
+    }
+
+    .carousel-content3{
+      background-color: var(--carousal-red);
+      color: white;
+      padding-left: 10px;
+    }
+
+    .carousel-content4{
+      background-color: var(--carousal-yellow);
+      color: white;
+      padding-left: 10px;
+    }
+
+    .carousel-heading{
+      font-size: 40px;
+      font-family: var(--font-family-heading);
+      line-height: 1;
+    }
+
+    .carousel-body{
+      padding: 120px;
+    }
+
+    .carousel-button{
+      color:black;
+      background-color: white;
+      padding: 9px 22px 9px 22px;
+      border: none;
+      font-size: 16px ;
+      border-radius: 30px;
+      font-weight: 600;
+      font-family: var(--font-family-main);
+      transition: 0.3s all;
+    }
+    .carousel-button:hover{
+      color: white;
+      background-color: rgb(42, 110, 47);
+    }
+
+    @media only screen and (max-width:460px){
+      
+    .carousel-heading{
+      font-size: 30px;
+    }
+
+      .carousel-body{
+      padding: 50px;
+    }
+    }
+ 
+
   </style>
 </head>
 <body>
   <!-- navbar -->
-<section class="container-fluid z-1">
+<section class="container-fluid z-3">
     <nav class="navbar navbar-expand-lg py-1 py-lg-2 fixed-top bg-white border-b">
       <div class="container-fluid px-3">
         <div>
@@ -282,7 +393,7 @@
 </section>
 
 <!-- second navbar -->
-<section class="container-fluid fixed-top second-navbar-container bg-white d-lg-block d-none z-0">
+<section class="container-fluid fixed-top second-navbar-container bg-white d-lg-block d-none z-2">
   <nav class="navbar navbar-expand-lg second-navigation-nav-class">
     <div class="container-fluid px-1">
       <div class="collapse navbar-collapse d-flex justify-content-start" id="navbarSupportedContent">
@@ -354,6 +465,98 @@
   </div>
 </section>
 
+<!-- carousel -->
+
+<section class="container mt-lg-5 mt-2">
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active carousal-image1 rounded-4">
+        <!-- <img src="..." class="d-block w-100" alt="..."> -->
+        <div class="col-lg-6 h-100 d-flex flex-column align-items-center justify-content-center rounded-4 round carousel-content1">
+          <div class="carousel-body d-flex flex-column justify-content-center align-items-start">
+            <h5 class=" col-12 carousel-heading">Dev and IT experts to scale your org</h5>
+            <p class="col-12">Hire independent professionals to shorten development cycles, bury backlogs, and drive product growth.</p>
+            <button class="carousel-button">Get started</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item carousal-image2 rounded-4">
+        <!-- <img src="..." class="d-block w-100" alt="..."> -->
+        <div class="col-lg-6 h-100 d-flex flex-column align-items-center justify-content-center rounded-4 round carousel-content2">
+          <div class="carousel-body d-flex flex-column justify-content-center align-items-start">
+            <h5 class=" col-12 carousel-heading">Hire freelance design to help you scale</h5>
+            <p class="col-12">Thousands of pros ready to kick-start your creative overhaul from day one.</p>
+            <button class="carousel-button">Get started</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item carousal-image3 rounded-4">
+        <!-- <img src="..." class="d-block w-100" alt="..."> -->
+        <div class="col-lg-6 h-100 d-flex flex-column align-items-center justify-content-center rounded-4 round carousel-content3">
+          <div class="carousel-body d-flex flex-column justify-content-center align-items-start">
+            <h5 class=" col-12 carousel-heading">Scale when you need to with marketing and sales experts </h5>
+            <p class="col-12">Build some buzz around your business with professionals from the world’s work marketplace.</p>
+            <button class="carousel-button">Get started</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item carousal-image4 rounded-4">
+        <!-- <img src="..." class="d-block w-100" alt="..."> -->
+        <div class="col-lg-6 h-100 d-flex flex-column align-items-center justify-content-center rounded-4 round carousel-content4">
+          <div class="carousel-body d-flex flex-column justify-content-center align-items-start">
+            <h5 class=" col-12 carousel-heading">Exceptional customer service creates happy customers</h5>
+            <p class="col-12">Work with Upwork to manage your organization’s customer service needs big or small</p>
+            <button class="carousel-button">Get started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <div class=" d-flex justify-content-center align-items-center rounded-circle" style="padding: 8px 9px;background-color: rgba(213, 213, 213, 0.386);"><span class="carousel-control-prev-icon" aria-hidden="true"></span></div>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <div class="d-flex justify-content-center align-items-center rounded-circle" style="padding: 8px 9px; background-color: rgba(213, 213, 213, 0.386);"><span class="carousel-control-next-icon" aria-hidden="true"></span></div>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+
+
+<!-- modals -->
+
+<section class="container d-flex justify-content-start py-4 mb-5">
+  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-lg-4 p-sm-3 p-2">
+  
+          <div class="py-3 px-3 d-flex justify-content-end align-items-center" ><button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button></div>
+        
+        <div class="modal-body text-center pt-0">
+          <h3 class="mb-4 font-family-heading">Form Submission</h3>
+          <div class=" mb-3 font-family-main" style="border-bottom: 1px solid rgb(191, 191, 191);">
+            <input type="name" class="form-control " id="exampleFormControlInput1" style="border: none;" placeholder="Name">
+          </div>
+          <div class="mb-3 font-family-main" style="border-bottom: 1px solid rgb(191, 191, 191);">
+            <input type="email" class="form-control" id="exampleFormControlInput1" style="border: none;" placeholder="Email">
+          </div>
+          <div class="mb-3 font-family-main" style="border-bottom: 1px solid rgb(191, 191, 191);">
+            <input type="designation" class="form-control" id="exampleFormControlInput1" style="border: none;" placeholder="Designation">
+          </div>
+          <div class="mb-3 font-family-main" style="border-bottom: 1px solid rgb(191, 191, 191);">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="border: none;" placeholder="Address"></textarea>
+          </div>
+          <div class="py-2 px-2 d-flex justify-content-around g-4 align-items-center">
+            <button type="button" class="common-button font-family-main">SUBMIT</button>
+            <!-- <button type="button" class="common-button" style="background-color: rgb(214, 206, 206); color: black;" data-bs-dismiss="modal">Close</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="common-button " data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Enquire us now !</button>
+</section>
 
 </body>
 </html>
