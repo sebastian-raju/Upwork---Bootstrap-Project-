@@ -74,9 +74,9 @@
     .common-button{
       color: white;
       background-color: var(--button-green);
-      padding: 9px 22px 9px 22px;
+      padding: 9px 19px 9px 19px;
       border: none;
-      font-size: 16px ;
+      font-size: 15px ;
       border-radius: 30px;
       font-weight: 600;
       font-family: var(--font-family-main);
@@ -284,6 +284,92 @@
       padding: 50px;
     }
     }
+
+    
+
+    /* signup section */
+
+    .sign-up-area{
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); 
+      padding: 20px 20px; 
+      border-radius: 30px; 
+      cursor: pointer;
+      transition: 0.35s all ease-in;
+    }
+
+    .sign-up-area:hover{
+      transform: translateY(-3px);
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3); 
+    }
+
+
+    .sign-up-heading{
+      font-size: 40px;
+    }
+    .sign-up-subtitles{
+      font-size: 18px;
+    }
+    .sign-up-content{
+      font-size: 14px;
+      font-family: var(--font-family-main);
+    }
+    
+    .hire-button{
+      color: var(--button-green);
+      background-color: white;
+      padding: 9px 19px 9px 19px;
+      border: solid 2px var(--button-green);
+      font-size: 15px ;
+      border-radius: 30px;
+      font-weight: 600;
+      font-family: var(--font-family-main);
+    }
+    .hire-button:hover{
+      background-color: var(--button-hover-green);
+      color: white;
+      border-color: var(--button-hover-green);
+
+    }
+
+    .last-sign-up-item{
+      margin-bottom: 9px;
+    }
+
+    @media only screen and (min-width:1400px){
+     .last-sign-up-item{
+      margin-bottom: 100px;
+     }
+    }
+
+    @media only screen and (max-width:1400px){
+      .sign-up-heading{
+      font-size: 35px;
+    }
+    }
+
+    @media only screen and (max-width:1200px){
+      .sign-up-heading{
+      font-size: 30px;
+    }
+    .sign-up-subtitles{
+      font-size: 16px;
+    }
+    .sign-up-content{
+      font-size: 12px;
+      font-family: var(--font-family-main);
+    }
+    }
+
+    @media only screen and (max-width:400px){
+      .sign-up-button{
+        font-size: 12px;
+      }
+      .hire-button{
+        font-size: 12px;
+      }
+    }
+
+
  
 
   </style>
@@ -450,7 +536,7 @@
 </section>
 
 <!-- companies -->
-<section class="container company-section py-5">
+<section class="container company-section pt-5 pb-4">
   <div class="row justify-content-start align-items-center">
     <div class="col-md-5 col-sm-4">
       <div class="text-start">
@@ -467,7 +553,7 @@
 
 <!-- carousel -->
 
-<section class="container mt-lg-5 mt-2">
+<section class="container mt-lg-5 mt-2 py-4">
   <div id="carouselExampleCaptions" class="carousel slide">
     <div class="carousel-inner">
       <div class="carousel-item active carousal-image1 rounded-4">
@@ -526,7 +612,7 @@
 
 <!-- modals -->
 
-<section class="container d-flex justify-content-start py-4 mb-5">
+<!-- <section class="container d-flex justify-content-start py-4 mb-lg-5 mb-4"> -->
   <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content p-lg-4 p-sm-3 p-2">
@@ -549,13 +635,82 @@
           </div>
           <div class="py-2 px-2 d-flex justify-content-around g-4 align-items-center">
             <button type="button" class="common-button font-family-main">SUBMIT</button>
-            <!-- <button type="button" class="common-button" style="background-color: rgb(214, 206, 206); color: black;" data-bs-dismiss="modal">Close</button> -->
           </div>
         </div>
       </div>
     </div>
   </div>
-  <button class="common-button " data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Enquire us now !</button>
+  <!-- <button class="common-button " data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Enquire us now !</button>
+</section> -->
+
+<!-- sign up section -->
+
+<section class="container py-4 mt-lg-5 mt-2 mb-5" style="padding: 0px 25px;">
+  <div class="row row-gap-2 sign-up-area">
+    <div class="col-lg-6 p-0" style="border-radius: 15px; overflow: hidden;"><img src="./Assets/images/screenshot-sign-up.jpg" alt="" style="width: 100%;"></div>
+    <div class="col-lg-6 ps-lg-4 px-0">
+      <h2 class="font-family-heading font-weight-600 sign-up-heading">Up your work game, it’s easy !</h2>
+      <div class="d-flex justify-content-start align-items-start mt-xxl-4 mt-lg-3 mt-4">
+        <div class="pb-1 pe-lg-3 pe-md-2 pe-1">
+          <img src="./Assets/svg/write.svg" alt="" style="width: 24px">
+        </div>
+        <div class="ms-2">
+          <h5 class="font-family-main font-weight-600 sign-up-subtitles">No cost to join</h5>
+          <div class="sign-up-content">Register and browse professionals, explore projects, or even book a consultation.</div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-start align-items-start mt-3">
+        <div class="pb-1 pe-lg-3 pe-md-2 pe-1">
+          <img src="./Assets/svg/pin.svg" alt="" style="width: 24px">
+        </div>
+        <div class="ms-2">
+          <h5 class="font-family-main font-weight-600 sign-up-subtitles">
+            Post a job and hire top talent</h5>
+          <div class="sign-up-content">Finding talent doesn’t have to be a chore. people are waiting for helping you all over the world.</div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-start align-items-start mt-3 mb-4 mb-lg-3 mb-xxl-4">
+        <div class="pb-1 pe-lg-3 pe-md-2 pe-1">
+          <img src="./Assets/svg/premium.svg" alt="" style="width: 24px">
+        </div>
+        <div class="ms-2">
+          <h5 class="font-family-main font-weight-600 sign-up-subtitles">Work with the best</h5>
+          <div class="sign-up-content">Upwork makes it affordable to up your work and take advantage of low transaction rates.</div>
+        </div>
+      </div>
+      <div class="d-flex column-gap-2">
+        <!-- <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-lg-4 p-sm-3 p-2">
+        
+                <div class="py-3 px-3 d-flex justify-content-end align-items-center" ><button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button></div>
+              
+              <div class="modal-body text-center pt-0">
+                <h3 class="mb-4 font-family-heading">Form Submission</h3>
+                <div class=" mb-3 font-family-main" style="border-bottom: 1px solid rgb(191, 191, 191);">
+                  <input type="name" class="form-control " id="exampleFormControlInput1" style="border: none;" placeholder="Name">
+                </div>
+                <div class="mb-3 font-family-main" style="border-bottom: 1px solid rgb(191, 191, 191);">
+                  <input type="email" class="form-control" id="exampleFormControlInput1" style="border: none;" placeholder="Email">
+                </div>
+                <div class="mb-3 font-family-main" style="border-bottom: 1px solid rgb(191, 191, 191);">
+                  <input type="designation" class="form-control" id="exampleFormControlInput1" style="border: none;" placeholder="Designation">
+                </div>
+                <div class="mb-3 font-family-main" style="border-bottom: 1px solid rgb(191, 191, 191);">
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="border: none;" placeholder="Address"></textarea>
+                </div>
+                <div class="py-2 px-2 d-flex justify-content-around g-4 align-items-center">
+                  <button type="button" class="common-button font-family-main">SUBMIT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <button class="common-button sign-up-button" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Sign up for free</button>
+        <button class=" hire-button">Learn how to hire</button>
+      </div>
+    </div>
+  </div>
 </section>
 
 </body>
