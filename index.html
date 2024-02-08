@@ -28,6 +28,11 @@
       --font-family-heading: 'Playfair Display', serif;
       --font-family-main:'Montserrat', sans-serif;
     }
+
+    *{
+      padding: 0;
+      margin: 0;
+    }
 /* Arial, Helvetica, sans-serif */
     .button-background-color{
       background-color: var(--button-green);
@@ -370,6 +375,26 @@
     }
 
 
+    /* browsing talents */
+    .browsing-cards{
+      transition: 0.1s all ;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+
+    
+
+    @media only screen and (min-width:700px){
+      .browsing-cards{
+      transition: 0.1s all ;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+      .browsing-cards:hover{
+      transform: translateY(-3px);
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3); 
+    }
+    }
  
 
   </style>
@@ -645,9 +670,9 @@
 
 <!-- sign up section -->
 
-<section class="container py-4 mt-lg-5 mt-2 mb-5" style="padding: 0px 25px;">
-  <div class="row row-gap-2 sign-up-area">
-    <div class="col-lg-6 p-0 " style="border-radius: 15px; overflow: hidden; "><img src="./Assets/images/screenshot-sign-up.jpg" alt="" style="width: 100%;"></div>
+<section class="container py-4 mt-lg-5 mt-2" style="padding: 0px 25px;">
+  <div class="row row-gap-2 sign-up-area align-items-center">
+    <div class="col-lg-6 p-0 " style="border-radius: 15px; overflow: hidden; height: 100%;"><img src="./Assets/images/screenshot-sign-up.jpg" alt="" style="width: 100%; object-fit: cover;"></div>
     <div class="col-lg-6 ps-lg-4 px-0">
       <h2 class="font-family-heading font-weight-600 sign-up-heading">Up your work game, it’s easy</h2>
       <div class="d-flex justify-content-start align-items-start mt-xxl-4 mt-lg-3 mt-4">
@@ -679,39 +704,145 @@
         </div>
       </div>
       <div class="d-flex column-gap-2">
-        <!-- <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content p-lg-4 p-sm-3 p-2">
-        
-                <div class="py-3 px-3 d-flex justify-content-end align-items-center" ><button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button></div>
-              
-              <div class="modal-body text-center pt-0">
-                <h3 class="mb-4 font-family-heading">Form Submission</h3>
-                <div class=" mb-3 font-family-main" style="border-bottom: 1px solid rgb(191, 191, 191);">
-                  <input type="name" class="form-control " id="exampleFormControlInput1" style="border: none;" placeholder="Name">
-                </div>
-                <div class="mb-3 font-family-main" style="border-bottom: 1px solid rgb(191, 191, 191);">
-                  <input type="email" class="form-control" id="exampleFormControlInput1" style="border: none;" placeholder="Email">
-                </div>
-                <div class="mb-3 font-family-main" style="border-bottom: 1px solid rgb(191, 191, 191);">
-                  <input type="designation" class="form-control" id="exampleFormControlInput1" style="border: none;" placeholder="Designation">
-                </div>
-                <div class="mb-3 font-family-main" style="border-bottom: 1px solid rgb(191, 191, 191);">
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="border: none;" placeholder="Address"></textarea>
-                </div>
-                <div class="py-2 px-2 d-flex justify-content-around g-4 align-items-center">
-                  <button type="button" class="common-button font-family-main">SUBMIT</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <button class="common-button sign-up-button" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Sign up for free</button>
-        <button class=" hire-button">Learn how to hire</button>
+        <button class="common-button sign-up-button d-none d-md-block" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Sign up for free</button>
+        <button class=" hire-button flex-md-grow-0 flex-grow-1" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Learn how to hire</button>
       </div>
     </div>
   </div>
 </section>
 
+<!-- browse talents section -->
+
+<section class="container mt-lg-5 mt-4 mb-5">
+  <div class="browse-section-heading font-family-heading font-weight-600 mb-4" style="font-size: 38px; line-height: 35px;">
+    Browse talent by category 
+  </div>
+  <div class="browse-section-subtitle font-family-main text-muted mb-4" style="font-weight: 500;">Looking for work? <a href="#" class="font-green-color link-underline-success">Browse jobs</a></div>
+ <div class="row gx-4 gy-lg-5 gy-4">
+  <div class="col-xl-3 col-lg-6">
+    <div class="card h-100 overflow-hidden rounded-4 browsing-cards">
+      <div style="width: 100%; height: 150px;"><img src="./Assets/card-images/devit.jpg" class="card-img-top" alt="..." style="width: 100%; height: 150px; object-fit: cover;"></div>
+      <div class="card-body">
+        <h5 class="font-family-main font-weight-600 mb-3">Development & IT</h5>
+        <div class="d-flex flex-row justify-content-start align-items-center column-gap-4 font-family-main">
+          <div class="rating d-flex">
+            <img src="./Assets/svg/star.svg" alt="" style="width: 20px;">
+            <div class="text-muted">4.85/5</div>
+          </div>
+          <div class="skillsno text-muted">1853 skills</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-3 col-lg-6">
+    <div class="card h-100 overflow-hidden rounded-4 browsing-cards">
+      <div style="width: 100%; height: 150px; object-fit: cover;"><img src="./Assets/card-images/aiservices.jpg" class="card-img-top" alt="..." style="width: 100%; height: 150px; object-fit: cover;"></div>
+      <div class="card-body">
+        <h5 class="font-family-main font-weight-600 mb-3">AI Services</h5>
+        <div class="d-flex flex-row justify-content-start align-items-center column-gap-4 font-family-main">
+          <div class="rating d-flex">
+            <img src="./Assets/svg/star.svg" alt="" style="width: 20px;">
+            <div class="text-muted">4.8/5</div>
+          </div>
+          <div class="skillsno text-muted">294 skills</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-3 col-lg-6">
+    <div class="card h-100 overflow-hidden rounded-4 browsing-cards">
+      <div style="width: 100%; height: 150px; object-fit: cover;"><img src="./Assets/card-images/designcr.jpg" class="card-img-top" alt="..." style="width: 100%; height: 150px; object-fit: cover;"></div>
+      <div class="card-body">
+        <h5 class="font-family-main font-weight-600 mb-3">Design & Creative</h5>
+        <div class="d-flex flex-row justify-content-start align-items-center column-gap-4 font-family-main">
+          <div class="rating d-flex">
+            <img src="./Assets/svg/star.svg" alt="" style="width: 20px;">
+            <div class="text-muted">4.91/5</div>
+          </div>
+          <div class="skillsno text-muted">968 skills</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-3 col-lg-6">
+    <div class="card h-100 overflow-hidden rounded-4 browsing-cards">
+      <div style="width: 100%; height: 150px; object-fit: cover;"><img src="./Assets/card-images/salemarket.jpg" class="card-img-top" alt="..." style="width: 100%; height: 150px; object-fit: cover;"></div>
+      <div class="card-body">
+        <h5 class="font-family-main font-weight-600 mb-3">Sales & Marketing</h5>
+        <div class="d-flex flex-row justify-content-start align-items-center column-gap-4 font-family-main">
+          <div class="rating d-flex">
+            <img src="./Assets/svg/star.svg" alt="" style="width: 20px;">
+            <div class="text-muted">4.77/5</div>
+          </div>
+          <div class="skillsno text-muted">392 skills</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-3 col-lg-6 d-none d-xl-block">
+    <div class="card h-100 overflow-hidden rounded-4 browsing-cards">
+      <div style="width: 100%; height: 150px;"><img src="./Assets/card-images/writingtrans.jpg" class="card-img-top" alt="..." style="width: 100%; height: 150px; object-fit: cover;"></div>
+      <div class="card-body">
+        <h5 class="font-family-main font-weight-600 mb-3">Writing and Translation</h5>
+        <div class="d-flex flex-row justify-content-start align-items-center column-gap-4 font-family-main">
+          <div class="rating d-flex">
+            <img src="./Assets/svg/star.svg" alt="" style="width: 20px;">
+            <div class="text-muted">4.92/5</div>
+          </div>
+          <div class="skillsno text-muted">214 skills</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-3 col-lg-6 d-none d-xl-block">
+    <div class="card h-100 overflow-hidden rounded-4 browsing-cards">
+      <div style="width: 100%; height: 150px; object-fit: cover;"><img src="./Assets/card-images/adminsupport.jpg" class="card-img-top" alt="..." style="width: 100%; height: 150px; object-fit: cover;"></div>
+      <div class="card-body">
+        <h5 class="font-family-main font-weight-600 mb-3">Admin &Customer Support</h5>
+        <div class="d-flex flex-row justify-content-start align-items-center column-gap-4 font-family-main">
+          <div class="rating d-flex">
+            <img src="./Assets/svg/star.svg" alt="" style="width: 20px;">
+            <div class="text-muted">4.77/5</div>
+          </div>
+          <div class="skillsno text-muted">508 skills</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-3 col-lg-6 d-none d-xl-block">
+    <div class="card h-100 overflow-hidden rounded-4 browsing-cards">
+      <div style="width: 100%; height: 150px; object-fit: cover;"><img src="./Assets/card-images/finance.jpg" class="card-img-top" alt="..." style="width: 100%; height: 150px; object-fit: cover;"></div>
+      <div class="card-body">
+        <h5 class="font-family-main font-weight-600 mb-3">Finance & Accounting</h5>
+        <div class="d-flex flex-row justify-content-start align-items-center column-gap-4 font-family-main">
+          <div class="rating d-flex">
+            <img src="./Assets/svg/star.svg" alt="" style="width: 20px;">
+            <div class="text-muted">4.79/5</div>
+          </div>
+          <div class="skillsno text-muted">214 skills</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-3 col-lg-6 d-none d-xl-block">
+    <div class="card h-100 overflow-hidden rounded-4 browsing-cards">
+      <div style="width: 100%; height: 150px; object-fit: cover;"><img src="./Assets/card-images/engarch.jpg" class="card-img-top" alt="..." style="width: 100%; height: 150px; object-fit: cover;"></div>
+      <div class="card-body">
+        <h5 class="font-family-main font-weight-600 mb-3">Engineering & Architecture</h5>
+        <div class="d-flex flex-row justify-content-start align-items-center column-gap-4 font-family-main">
+          <div class="rating d-flex">
+            <img src="./Assets/svg/star.svg" alt="" style="width: 20px;">
+            <div class="text-muted">4.85/5</div>
+          </div>
+          <div class="skillsno text-muted">650 skills</div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+ <div class="link mt-4 d-block d-xl-none">
+  <a href="#" class="font-green-color link-underline-success">Show more</a>
+ </div>
+</section>
 </body>
 </html>
