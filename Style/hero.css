@@ -1,0 +1,42 @@
+  /* hero-section */
+
+  .hero-section{
+    margin-top: 210px;
+  }
+
+  .hero-title{
+    font-size: 80px; 
+    font-weight: 600; 
+    letter-spacing: -2px; 
+    word-spacing: 10px; 
+    line-height: 85px;
+  }
+
+  @media only screen and (max-width:1200px){
+    .hero-title{
+      font-size: 70px;
+      line-height: 75px;
+      word-spacing: 8px;
+    }
+  }
+
+  @media only screen and (max-width:992px){
+    .hero-section{
+    margin-top: 100px;
+  }
+  .hero-title{
+      line-height: 75px;
+      word-spacing: 8px;
+    }
+  }
+
+  @media only screen and (max-width:700px){
+    .hero-section{
+    margin-top: 85px;
+  }
+    .hero-title{
+      font-size: 52px;
+      line-height: 55px;
+      word-spacing: 4px;
+    }
+  }

@@ -1,0 +1,17 @@
+ /* second-navbar */
+
+ .second-navbar-container{
+  position: fixed;
+  top: 62px;
+}
+
+.second-navigation-nav-class{
+  height: 64px;
+}
+
+.second-section-link{
+  color: black;
+}
+.second-section-link:hover{
+  color: var(--font-green)
+}

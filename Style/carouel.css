@@ -1,0 +1,97 @@
+ /* carousel */
+
+
+ .carousal-image1{
+  background: url('../Assets/images/devandai.jpg') no-repeat top 50% right;
+  background-size:  643px 450px;
+  height: 500px; 
+  /* background-color: rgb(4, 108, 4); */
+  background-color: white;
+}
+
+.carousal-image2{
+  background: url('../Assets/images/designcreative.jpg') no-repeat top 50% right;
+  background-size:  643px 450px;
+  height: 500px; 
+  /* background-color: rgb(4, 108, 4); */
+  background-color: white;
+}
+
+.carousal-image3{
+  background: url('../Assets/images/saleandmarketing.jpg') no-repeat top 50% right;
+  background-size:  643px 450px;
+  height: 500px; 
+  /* background-color: rgb(4, 108, 4); */
+  background-color: white;
+}
+
+.carousal-image4{
+  background: url('../Assets/images/customersupport.jpg') no-repeat top 50% right;
+  background-size:  643px 450px;
+  height: 500px; 
+  /* background-color: rgb(4, 108, 4); */
+  background-color: white;
+}
+
+
+.carousel-content1{
+  background-color: var(--carousal-green);
+  color: white;
+  padding-left: 10px;
+}
+
+.carousel-content2{
+  background-color: var(--carousal-blue);
+  color: white;
+  padding-left: 10px;
+}
+
+.carousel-content3{
+  background-color: var(--carousal-red);
+  color: white;
+  padding-left: 10px;
+}
+
+.carousel-content4{
+  background-color: var(--carousal-yellow);
+  color: white;
+  padding-left: 10px;
+}
+
+.carousel-heading{
+  font-size: 40px;
+  font-family: var(--font-family-heading);
+  line-height: 1;
+}
+
+.carousel-body{
+  padding: 120px;
+}
+
+.carousel-button{
+  color:black;
+  background-color: white;
+  padding: 9px 22px 9px 22px;
+  border: none;
+  font-size: 16px ;
+  border-radius: 30px;
+  font-weight: 600;
+  font-family: var(--font-family-main);
+  transition: 0.3s all;
+}
+.carousel-button:hover{
+  color: white;
+  background-color: rgb(42, 110, 47);
+}
+
+@media only screen and (max-width:460px){
+  
+.carousel-heading{
+  font-size: 30px;
+}
+
+  .carousel-body{
+  padding: 50px;
+}
+}
+

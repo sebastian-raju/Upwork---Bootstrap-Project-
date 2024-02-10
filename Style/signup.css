@@ -1,0 +1,81 @@
+/* signup section */
+
+.sign-up-area{
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); 
+  padding: 20px 20px; 
+  border-radius: 30px; 
+  cursor: pointer;
+  transition: 0.35s all ease-in;
+}
+
+.sign-up-area:hover{
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3); 
+}
+
+
+.sign-up-heading{
+  font-size: 40px;
+}
+.sign-up-subtitles{
+  font-size: 18px;
+}
+.sign-up-content{
+  font-size: 14px;
+  font-family: var(--font-family-main);
+}
+
+.hire-button{
+  color: var(--button-green);
+  background-color: white;
+  padding: 9px 19px 9px 19px;
+  border: solid 2px var(--button-green);
+  font-size: 15px ;
+  border-radius: 30px;
+  font-weight: 600;
+  font-family: var(--font-family-main);
+}
+.hire-button:hover{
+  background-color: var(--button-hover-green);
+  color: white;
+  border-color: var(--button-hover-green);
+
+}
+
+.last-sign-up-item{
+  margin-bottom: 9px;
+}
+
+@media only screen and (min-width:1400px){
+ .last-sign-up-item{
+  margin-bottom: 100px;
+ }
+}
+
+@media only screen and (max-width:1400px){
+  .sign-up-heading{
+  font-size: 35px;
+}
+}
+
+@media only screen and (max-width:1200px){
+  .sign-up-heading{
+  font-size: 30px;
+}
+.sign-up-subtitles{
+  font-size: 16px;
+}
+.sign-up-content{
+  font-size: 12px;
+  font-family: var(--font-family-main);
+}
+}
+
+@media only screen and (max-width:400px){
+  .sign-up-button{
+    font-size: 12px;
+  }
+  .hire-button{
+    font-size: 12px;
+  }
+}

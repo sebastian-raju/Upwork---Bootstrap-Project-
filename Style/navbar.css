@@ -1,0 +1,35 @@
+/* navbar */
+
+.border-b{
+  border-bottom: solid 1px rgba(195, 195, 195, 0.8);
+}
+
+.navigaton-section-search{
+  padding-left: 40px;
+  padding-bottom: 8px;
+  color: black;
+}
+.navigaton-section-search::placeholder{
+  color: black;
+}
+
+.search-icon-nav-section{
+  position: absolute;
+  left: 13px;
+  bottom:10px ;
+}
+
+.navigation-section-form{
+  border: solid 1px rgba(195, 195, 195, 0.8);
+  border-radius: 25px;
+  padding: 1px;
+}
+.navigation-section-form:hover{
+  background-color: rgba(195, 195, 195, 0.8);
+}
+
+@media only screen and (max-width:1200px){
+  .navigation-section-form{
+    border: none;
+  }
+}

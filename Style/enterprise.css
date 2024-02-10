@@ -1,0 +1,108 @@
+ /* enterprise suite section */
+
+ .enterprise-container{
+  margin-top: 110px;
+ }
+
+ .enterprise-row{
+  border-radius: 8px;
+  overflow: hidden;
+ }
+
+ .enterprise-main-content{
+  background-color: rgb(19, 84, 78);
+ }
+
+ .enterprise-content{
+  padding: 35px 45px 35px 35px;
+ }
+
+ .enterprise-title{
+  width: 80%; 
+  font-size: 56px; 
+  line-height: 58px;
+  color: rgb(145, 230, 179);
+ }
+
+ .enterprise-span{
+  color: white;
+  font-size: 56px;
+ }
+
+ .enterprise-desc{
+  width: 75%;
+ }
+ 
+ .enterprise-image{
+  width: 100%; 
+  height:100%; 
+  object-fit: cover;
+  display: block;
+ }
+
+ .enterprise-button{
+  color:rgb(19, 84, 78);
+  background-color: white;
+  padding: 9px 22px 9px 22px;
+  border: none;
+  font-size: 16px ;
+  border-radius: 30px;
+  font-weight: 600;
+  font-family: var(--font-family-main);
+
+ }
+
+
+
+ @media only screen and (max-width:1200px){
+  .enterprise-container{
+    margin-top: 70px;
+   }
+  
+  .enterprise-content{
+    padding: 40px 25px 29px 30px;
+  }
+  .enterprise-title, .enterprise-span{
+    font-size: 42px;
+    line-height: 45px; 
+   }
+ }
+
+ @media only screen and (max-width:768px){
+  .enterprise-container{
+    margin-top: 60px;
+   }
+  .enterprise-content{
+    padding: 20px 15px;
+  }
+  .enterprise-row{
+    border-radius: 0px;
+    overflow: hidden;
+   }
+   .enterprise-title, .enterprise-span{
+    font-size: 38px; 
+    line-height: 40px;
+   }
+   .enterprise-image-container{
+    aspect-ratio: 2/1;    
+    /* 2- width 1-height  to change the aspect ratio of an element eg: 16/9 or 16:9 for videos*/
+   }
+  
+ }
+
+ @media only screen and (max-width:400px){
+  .enterprise-container{
+    margin-top: 60px;
+   }
+  .enterprise-title{
+    width: 100%;
+   }
+  .enterprise-desc{
+    width: 90%;
+  }
+  .enterprise-title, .enterprise-span{
+    font-size: 35px; 
+    line-height: 38px;
+   }
+   
+ }
