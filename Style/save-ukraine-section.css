@@ -1,0 +1,49 @@
+/* save-ukraine-section */
+
+.save-ukraine-main-row{
+  background: url(../Assets/svg/ukraine-help.svg) no-repeat top 50% right 40px;
+  background-size: 185px 147px;
+}
+
+.save-ukraine-title{
+  font-size: 38px;
+  line-height: 42px;
+}
+
+
+.learn-more-button{
+  color: var(--button-green);
+background-color: white;
+padding: 9px 19px 9px 19px;
+border: solid 2px var(--button-green);
+font-size: 15px ;
+border-radius: 30px;
+font-weight: 600;
+font-family: var(--font-family-main);
+}
+
+.learn-more-button:hover{
+background-color: var(--button-hover-green);
+color: white;
+border-color: var(--button-hover-green);
+
+}
+
+@media only screen and (max-width:992px){
+.save-ukraine-main-row{
+  background: url(../Assets/svg/ukraine-help.svg) no-repeat top 50% right 40px;
+  background-size: 145px 107px;
+}
+
+}
+@media only screen and (max-width:768px){
+.save-ukraine-title{
+font-size: 28px;
+
+}
+
+.save-ukraine-main-row{
+  background: url(../Assets/svg/ukraine-help.svg) no-repeat bottom -20px right 40px;
+  background-size: 100px 80px;
+}
+}
