@@ -13,6 +13,10 @@
 
   <script src="https://kit.fontawesome.com/c53c7811e0.js" crossorigin="anonymous"></script>
 
+  <!-- animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <link rel="stylesheet" href="./Style/global.css">
   <link rel="stylesheet" href="./Style/navbar.css">
   <link rel="stylesheet" href="./Style/second-navbar.css">
@@ -301,7 +305,7 @@
 <!-- sign up section -->
 
 <section class="container py-4 mt-lg-5 mt-2" style="padding: 0px 25px;">
-  <div class="row row-gap-2 sign-up-area align-items-center">
+  <div data-aos="zoom-in" class="row row-gap-2 sign-up-area align-items-center">
     <div class="col-lg-6 p-0 " style="border-radius: 15px; overflow: hidden; height: 100%;"><img src="./Assets/images/screenshot-sign-up.jpg" loading="lazy" alt="" style="width: 100%; object-fit: cover;"></div>
     <div class="col-lg-6 ps-lg-4 px-0">
       <h2 class="font-family-heading font-weight-600 sign-up-heading">Up your work game, it’s easy</h2>
@@ -479,7 +483,7 @@
 <!-- Enterprise suite section -->
 
 <section class="container-md container-fluid enterprise-container mb-5">
-  <div class="row p-0 g-0 flex-column-reverse flex-md-row enterprise-row">
+  <div data-aos="fade-right" class="row p-0 g-0 flex-column-reverse flex-md-row enterprise-row">
     <div class="col-md-7 flex-grow-1 enterprise-main-content">
     <div class="enterprise-content d-flex flex-column align-items-start">
       <h5 class="font-family-main text-white mb-4">Enterprise Suite</h5>
@@ -516,7 +520,7 @@
 <!-- for talent section -->
 
 <section class="container-md container-fluid fortalent-container mb-5 pb-md-4 pt-md-2">
-  <div class="row p-0 g-0 flex-column flex-md-row fortalent-row">
+  <div data-aos="fade-left" class="row p-0 g-0 flex-column flex-md-row fortalent-row">
     <div class="col-md-6 d-md-none d-lg-block d-block  fortalent-image-container flex-grow-1 " >
       <img src="./Assets/images/find-great-work.jpg" alt="" class="fortalent-image" loading="lazy">
     </div>
@@ -814,5 +818,10 @@
 </div>
 
 </section>
+
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html>
